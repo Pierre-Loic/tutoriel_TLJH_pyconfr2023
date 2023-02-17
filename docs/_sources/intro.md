@@ -7,10 +7,10 @@ ___
 
 ```{sidebar} [![Linkedin](linkedin.png)](https://www.linkedin.com/in/pierreloicbayart/) Pierre-Loic Bayart
 
-🎓 **Ingénieur nucléaire** de formation, j'ai **changé de carrière** en 2017 pour devenir **formateur indépendant** dans les **données** et l'**intelligence artificielle**. J'ai découvert le **Python** en **2012** par l'intermédiaire de nano-ordinateur **RaspberryPi**. Au fil de mes pérégrinations pythoniques, j'ai vite découvert la **puissance** des **outils de data science** et d'**intelligence artificielle** en Python.
+🎓 **Ingénieur nucléaire** de formation, j'ai **changé de carrière** en 2017 pour devenir **formateur indépendant** dans les **données** et l'**intelligence artificielle**. J'ai découvert le **Python** en **2012** par l'intermédiaire du nano-ordinateur **RaspberryPi**. Au fil de mes pérégrinations pythoniques, je me suis vite rendu compte de la **puissance** des **outils de data science** et d'**intelligence artificielle** en Python.
 ```
 
-J'ai découvert **the littlest Jupyter Hub (TLJH)** dans le cadre des mes activités de formateur dans les données et l'intelligence artificielle. Je cherchais un **outil** à la fois **simple à déployer** et **pratique à utiliser** pour les apprenants. Je connaissais déjà les **[Jupyter notebooks](https://docs.jupyter.org/en/latest/start/index.html)** et les **[Jupyter Labs](https://jupyterlab.readthedocs.io/en/stable/)**. Je connaissais aussi les **notebooks hébergés** (Kaggle Notebooks, Google Collaboratory, Azure Notebooks...). Mais cela ne correspondait pas exactement à ce que je cherchais. Je voulais **avoir la main** sur toute la **gestion des notebooks** et des **labs**.
+J'ai découvert **the littlest Jupyter Hub (TLJH)** dans le cadre de mes activités de formateur dans les données et l'intelligence artificielle. Je cherchais un **outil** à la fois **simple à déployer** et **pratique à utiliser** pour les apprenants. Je connaissais déjà les **[Jupyter notebooks](https://docs.jupyter.org/en/latest/start/index.html)** et les **[Jupyter Labs](https://jupyterlab.readthedocs.io/en/stable/)**. Je connaissais aussi les **notebooks hébergés** (Kaggle Notebooks, Google Collaboratory, Azure Notebooks...). Mais cela ne correspondait pas exactement à ce que je cherchais. Je voulais **avoir la main** sur toute la **gestion des notebooks** et des **labs**.
 
 ```{admonition} Vocabulaire
 Dans un souci de concision, **the littlest Jupyter Hub (TLJH)** sera raccourci en **TLJH** dans les autres pages de ce site.
@@ -41,7 +41,7 @@ Entre deux sessions de formation, vous pouvez simplement **éteindre la machine 
 
 ___
 ```{admonition} Mise en abyme
-Ce site est un Jupyter Book. Si ça vous intéresse, suivez ce lien : https://jupyterbook.org/en/stable/intro.html
+Ce site est un **Jupyter Book**. Si ça vous intéresse, suivez ce lien : https://jupyterbook.org/en/stable/intro.html
 
 📅 Si le sujet de l'**écosystème Jupyter** vous intéresse, les conférences **JupyterCon 2023** ont lieu à **Paris** du **10 au 12 mai 2023**. Pour les informations et les inscriptions, c'est par ici : https://www.jupytercon.com/
 ```

@@ -2,7 +2,7 @@
 
 ## 📓 Documentation officielle TLJH
 
-La **documentation officielle TLJH** est **très complètes**. Elle présente beaucoup d'informations que je n'ai pas présentées comme par exemple les **différents types d'authentifications**, l'installation sur d'**autres fournisseurs de cloud** qu'Azure ou même sur votre propre serveur...
+La **documentation officielle TLJH** est **assez complète**. Elle présente beaucoup d'informations que je n'ai pas présentées comme par exemple les **différents types d'authentifications**, l'installation sur d'**autres fournisseurs de cloud** qu'Azure ou même sur votre propre serveur...
 
 Lien : https://tljh.jupyter.org/en/latest/
 
@@ -22,7 +22,7 @@ Lien : https://hub.jupyter.org/nbgitpuller/
 
 ### Nbgrader
 
-Cette **bibliothèque complémentaire** de TLJH permet de mettre en place une **évaluation automatique** des notebook d'examen ou de tests. Elle n'est **pas très simple** à mettre en place en l'état actuel et n'est donc **pas très pertinente** pour des formations en **petits groupes** (<20 personnes).
+Cette **bibliothèque complémentaire** de TLJH permet de mettre en place une **évaluation automatique** des notebooks d'examens ou de tests. Elle n'est **pas très simple** à mettre en place en l'état actuel et n'est donc **pas très pertinente** pour des formations en **petits groupes** (<20 personnes).
 
 Lien : https://nbgrader.readthedocs.io/en/stable/
 
@@ -36,7 +36,7 @@ Lien : http://www.data8.org/
 
 ### Université de Lyon
 
-Le **département de mécanique** de l'**université de Lyon** a mis en place un **JupyterHub** pour des TP. La bibliothèque [Nbgrader](https://nbgrader.readthedocs.io/en/stable/) est aussi été utilisée pour effectuer des **évaluations**.
+Le **département de mécanique** de l'**université de Lyon** a mis en place un **JupyterHub** pour des TP. La bibliothèque [Nbgrader](https://nbgrader.readthedocs.io/en/stable/) a aussi été utilisée pour effectuer des **évaluations**.
 
 Lien : https://perso.univ-lyon1.fr/marc.buffat/COURS/BOOK_VALIDATION_HTML/intro.html
 

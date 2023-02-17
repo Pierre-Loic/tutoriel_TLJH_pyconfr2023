@@ -1,14 +1,14 @@
-# Comment paramètrer TLJH à votre usage ?
+# Comment paramétrer TLJH à votre usage ?
 
 Les actions présentées dans cette partie sont **réalisées directement** dans le **JupyterHub**. Elles sont donc **indépendantes du type de déploiement** que vous avez effectué précédemment (déploiement cloud ou sur serveur privé).
 
 ## Comment définir le Jupyter Lab comme interface par défaut ?
 
-Pour définir le **Jupyter Lab** comme **interface par défaut**, il suffit de **modifier le paramètre `user_environment.default_app`** du JupyterHub. Pour cela, il suffit d'ouvrir un terminal dans le JupyterHub et d'éxécuter la commande suivante :
+Pour définir le **Jupyter Lab** comme **interface par défaut**, il suffit de **modifier le paramètre `user_environment.default_app`** du JupyterHub. Pour cela, il suffit d'ouvrir un terminal dans le JupyterHub et d'exécuter la commande suivante :
 ```bash
 sudo tljh-config set user_environment.default_app jupyterlab
 ```
-Ensuite, vous devez **relancer le JupyterHub** en éxécutant la commande suivante :
+Ensuite, vous devez **relancer le JupyterHub** en exécutant la commande suivante :
 ```bash
 sudo tljh-config reload hub
 ```
@@ -38,7 +38,7 @@ Il ne vous reste plus qu'à **ajouter votre liste d'apprenants** (un par ligne) 
 
 ![param_4](param_4.png)
 
-Vous pouvez maintenant **tester** les nouveaux compte en vous **déconnectant** et en **reconnectant** avec un nom d'apprennant ajouté. Le **mot de passe** est **enregistré à la première connection**.
+Vous pouvez maintenant **tester** les nouveaux comptes en vous **déconnectant** et en vous **reconnectant** avec un nom d'apprenant ajouté. Le **mot de passe** est **enregistré à la première connexion**.
 
 ```{admonition} Information
 Pour plus de détails, vous pouvez regarder cette **vidéo** : [![The Littlest JupyterHub - Partie 4 - Création des comptes apprenants](http://img.youtube.com/vi/4q5fv4q1kl4/0.jpg)](https://www.youtube.com/watch?v=4q5fv4q1kl4 "The Littlest JupyterHub - Partie 4 - Création des comptes apprenants")
@@ -70,11 +70,11 @@ Lien vers la **documentation officielle** : https://tljh.jupyter.org/en/latest/h
 
 ## Sans dépôt Git
 
-Dans l'interface du **Jupyter Lab**, vous pouvez directement **charger des fichiers** (notebooks, jeu de données) en cliquant sur la **fléche en haut à gauche** :
+Dans l'interface du **Jupyter Lab**, vous pouvez directement **charger des fichiers** (notebooks, jeux de données) en cliquant sur la **flèche en haut à gauche** :
 
 ![param_5](param_5.png)
 
-Vous pouvez ensuite ouvrir un **terminal** et **exécuter les commandes** suivantes (en remplacant "nom admin" pour votre nom d'administrateur et "nom apprenant" pour votre nom d'apprenant):
+Vous pouvez ensuite ouvrir un **terminal** et **exécuter les commandes** suivantes (en remplaçant "nom admin" pour votre nom d'administrateur et "nom apprenant" pour votre nom d'apprenant) :
 ```bash
 cd ..
 sudo cp jupyter-<nom admin>/Exercice.ipynb  jupyter-<nom apprenant>/Exercice.ipynb

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Comment paramètrer TLJH à votre usage ? &#8212; Un membre très discret de la famille Jupyter mais pourtant si utile</title>
+    <title>Comment paramétrer TLJH à votre usage ? &#8212; Un membre très discret de la famille Jupyter mais pourtant si utile</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Comment paramètrer TLJH à votre usage ?
+   Comment paramétrer TLJH à votre usage ?
   </a>
  </li>
  <li class="toctree-l1">
@@ -350,7 +350,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Comment paramètrer TLJH à votre usage ?</h1>
+                <h1>Comment paramétrer TLJH à votre usage ?</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -401,15 +401,15 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="comment-parametrer-tljh-a-votre-usage">
-<h1>Comment paramètrer TLJH à votre usage ?<a class="headerlink" href="#comment-parametrer-tljh-a-votre-usage" title="Permalink to this headline">#</a></h1>
+<h1>Comment paramétrer TLJH à votre usage ?<a class="headerlink" href="#comment-parametrer-tljh-a-votre-usage" title="Permalink to this headline">#</a></h1>
 <p>Les actions présentées dans cette partie sont <strong>réalisées directement</strong> dans le <strong>JupyterHub</strong>. Elles sont donc <strong>indépendantes du type de déploiement</strong> que vous avez effectué précédemment (déploiement cloud ou sur serveur privé).</p>
 <section id="comment-definir-le-jupyter-lab-comme-interface-par-defaut">
 <h2>Comment définir le Jupyter Lab comme interface par défaut ?<a class="headerlink" href="#comment-definir-le-jupyter-lab-comme-interface-par-defaut" title="Permalink to this headline">#</a></h2>
-<p>Pour définir le <strong>Jupyter Lab</strong> comme <strong>interface par défaut</strong>, il suffit de <strong>modifier le paramètre <code class="docutils literal notranslate"><span class="pre">user_environment.default_app</span></code></strong> du JupyterHub. Pour cela, il suffit d’ouvrir un terminal dans le JupyterHub et d’éxécuter la commande suivante :</p>
+<p>Pour définir le <strong>Jupyter Lab</strong> comme <strong>interface par défaut</strong>, il suffit de <strong>modifier le paramètre <code class="docutils literal notranslate"><span class="pre">user_environment.default_app</span></code></strong> du JupyterHub. Pour cela, il suffit d’ouvrir un terminal dans le JupyterHub et d’exécuter la commande suivante :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>tljh-config<span class="w"> </span><span class="nb">set</span><span class="w"> </span>user_environment.default_app<span class="w"> </span>jupyterlab
 </pre></div>
 </div>
-<p>Ensuite, vous devez <strong>relancer le JupyterHub</strong> en éxécutant la commande suivante :</p>
+<p>Ensuite, vous devez <strong>relancer le JupyterHub</strong> en exécutant la commande suivante :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>tljh-config<span class="w"> </span>reload<span class="w"> </span>hub
 </pre></div>
 </div>
@@ -430,7 +430,7 @@ title="Print to PDF"
 <p><img alt="param_3" src="_images/param_3.png" /></p>
 <p>Il ne vous reste plus qu’à <strong>ajouter votre liste d’apprenants</strong> (un par ligne) :</p>
 <p><img alt="param_4" src="_images/param_4.png" /></p>
-<p>Vous pouvez maintenant <strong>tester</strong> les nouveaux compte en vous <strong>déconnectant</strong> et en <strong>reconnectant</strong> avec un nom d’apprennant ajouté. Le <strong>mot de passe</strong> est <strong>enregistré à la première connection</strong>.</p>
+<p>Vous pouvez maintenant <strong>tester</strong> les nouveaux comptes en vous <strong>déconnectant</strong> et en vous <strong>reconnectant</strong> avec un nom d’apprenant ajouté. Le <strong>mot de passe</strong> est <strong>enregistré à la première connexion</strong>.</p>
 <div class="admonition-information admonition">
 <p class="admonition-title">Information</p>
 <p>Pour plus de détails, vous pouvez regarder cette <strong>vidéo</strong> : <a class="reference external" href="https://www.youtube.com/watch?v=4q5fv4q1kl4"><img alt="The Littlest JupyterHub - Partie 4 - Création des comptes apprenants" src="http://img.youtube.com/vi/4q5fv4q1kl4/0.jpg" /></a></p>
@@ -459,9 +459,9 @@ title="Print to PDF"
 </section>
 <section id="sans-depot-git">
 <h2>Sans dépôt Git<a class="headerlink" href="#sans-depot-git" title="Permalink to this headline">#</a></h2>
-<p>Dans l’interface du <strong>Jupyter Lab</strong>, vous pouvez directement <strong>charger des fichiers</strong> (notebooks, jeu de données) en cliquant sur la <strong>fléche en haut à gauche</strong> :</p>
+<p>Dans l’interface du <strong>Jupyter Lab</strong>, vous pouvez directement <strong>charger des fichiers</strong> (notebooks, jeux de données) en cliquant sur la <strong>flèche en haut à gauche</strong> :</p>
 <p><img alt="param_5" src="_images/param_5.png" /></p>
-<p>Vous pouvez ensuite ouvrir un <strong>terminal</strong> et <strong>exécuter les commandes</strong> suivantes (en remplacant “nom admin” pour votre nom d’administrateur et “nom apprenant” pour votre nom d’apprenant):</p>
+<p>Vous pouvez ensuite ouvrir un <strong>terminal</strong> et <strong>exécuter les commandes</strong> suivantes (en remplaçant “nom admin” pour votre nom d’administrateur et “nom apprenant” pour votre nom d’apprenant) :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>..
 sudo<span class="w"> </span>cp<span class="w"> </span>jupyter-&lt;nom<span class="w"> </span>admin&gt;/Exercice.ipynb<span class="w">  </span>jupyter-&lt;nom<span class="w"> </span>apprenant&gt;/Exercice.ipynb
 sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>jupyter-&lt;nom<span class="w"> </span>apprenant&gt;/Exercice.ipynb

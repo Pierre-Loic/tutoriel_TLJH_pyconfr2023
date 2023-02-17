@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Comment paramètrer TLJH à votre usage ?" href="parametrages.html" />
+    <link rel="next" title="Comment paramétrer TLJH à votre usage ?" href="parametrages.html" />
     <link rel="prev" title="Pourquoi cette conférence ?" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="parametrages.html">
-   Comment paramètrer TLJH à votre usage ?
+   Comment paramétrer TLJH à votre usage ?
   </a>
  </li>
  <li class="toctree-l1">
@@ -446,7 +446,7 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="ou-et-comment-installer-tljh">
 <h1>Où et comment installer TLJH ?<a class="headerlink" href="#ou-et-comment-installer-tljh" title="Permalink to this headline">#</a></h1>
-<p>L’installation de TLJH peut s’effectuer sur toute machine virtuelle avec système d’exploitation <strong>Ubuntu Server 18.04 ou plus récent</strong>. Je vous présente ici l’installation sur <strong>Azure</strong> mais cette installation est aussi possible sur les <strong>autres fournisseurs de cloud</strong> (AWS, GCP, OVHCloud, Scaleway…).</p>
+<p>L’installation de TLJH peut s’effectuer sur toute machine virtuelle avec un système d’exploitation <strong>Ubuntu Server 18.04 ou plus récent</strong>. Je vous présente ici l’installation sur <strong>Azure</strong> mais cette installation est aussi possible sur les <strong>autres fournisseurs de cloud</strong> (AWS, GCP, OVHCloud, Scaleway…).</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Avec l’utilisation du cloud, on peut vite avoir des <strong>surprises sur la facturation</strong>. Je vous conseille donc de bien vérifier que l’<strong>arrêt automatique</strong> est activé. Normalement, il est mis en place par défaut à 19h.</p>
@@ -474,20 +474,20 @@ title="Print to PDF"
 <p><img alt="install_3" src="_images/install_3.png" /></p>
 <p>La <strong>version</strong> d’Ubuntu serveur doit être <strong>ultérieure à 18.04</strong>. Vous pouvez prendre la version <strong>22.04 LTS</strong> :</p>
 <p><img alt="install_4" src="_images/install_4.png" /></p>
-<p>Pour accéder au paramètrage de la machine virtuelle, cliquez sur <strong>“Créer”</strong> :</p>
+<p>Pour accéder au paramétrage de la machine virtuelle, cliquez sur <strong>“Créer”</strong> :</p>
 <p><img alt="install_5" src="_images/install_5.png" /></p>
 </section>
 <section id="etape-3-parametres-generaux">
 <h2>Etape 3 : paramètres généraux<a class="headerlink" href="#etape-3-parametres-generaux" title="Permalink to this headline">#</a></h2>
-<p>Après avoir cliqué sur “Créer”, vous arrivez sur cet <strong>écran de paramètrage</strong> de la machine virtuelle <strong>Ubuntu Server 22.04 LTS</strong> :</p>
+<p>Après avoir cliqué sur “Créer”, vous arrivez sur cet <strong>écran de paramétrage</strong> de la machine virtuelle <strong>Ubuntu Server 22.04 LTS</strong> :</p>
 <p><img alt="install_6" src="_images/install_6.png" /></p>
-<p>Dans l’onglet des <strong>paramètres de base</strong>, vous devez remplir les élèments suivants :</p>
+<p>Dans l’onglet des <strong>paramètres de base</strong>, vous devez remplir les éléments suivants :</p>
 <div class="admonition-information admonition">
 <p class="admonition-title">Information</p>
 <p>Les <strong>paramètres non listés</strong> doivent être laissés à leur <strong>valeur par défaut</strong>. Pour plus de détails, vous pouvez regarder cette <strong>vidéo</strong> : <a class="reference external" href="https://www.youtube.com/watch?v=x-MJwweK0Mw"><img alt="The Littlest JupyterHub - Partie 1 - Installation sur Azure" src="http://img.youtube.com/vi/x-MJwweK0Mw/0.jpg" /></a></p>
 </div>
 <ul class="simple">
-<li><p><em>Abonnement</em> : selectionnez le compte qui sera <strong>facturé</strong> pour cette machine virtuelle</p></li>
+<li><p><em>Abonnement</em> : sélectionnez le compte qui sera <strong>facturé</strong> pour cette machine virtuelle</p></li>
 <li><p><em>Groupe de ressources</em> : choisissez un nom qui vous permet de retrouver facilement l’<strong>ensemble des ressources</strong> liées au JupyterHub. Par exemple, <code class="docutils literal notranslate"><span class="pre">rg-TLJH</span></code></p></li>
 <li><p><em>Nom de la machine virtuelle</em> : choisissez un nom qui vous permet de retrouver facilement la <strong>machine virtuelle</strong> dans le groupe de ressources. Par exemple, <code class="docutils literal notranslate"><span class="pre">vm-TLJH</span></code></p></li>
 <li><p><em>Région</em> : ce paramètre correspond au <strong>datacenter</strong> dans lequel sera déployée la machine virtuelle. Choisissez celui le <strong>plus proche de vos utilisateurs</strong> pour diminuer la latence.</p></li>
@@ -511,7 +511,7 @@ title="Print to PDF"
 <h2>Etape 5 : script de démarrage<a class="headerlink" href="#etape-5-script-de-demarrage" title="Permalink to this headline">#</a></h2>
 <p>Après avoir défini les paramètres du stockage, on peut passer aux <strong>paramètres avancés</strong>.</p>
 <p><img alt="install_8" src="_images/install_8.png" /></p>
-<p>Dans la partie <strong>“Données personnalisées”</strong>, vous devez ajouter le <strong>script de démarrage</strong> qui permet l’<strong>installation de TLJH</strong> sur la machine virtuelle. Vous pouvez <strong>copier/coller</strong> le code suivant en remplaçant <code class="docutils literal notranslate"><span class="pre">&lt;admin-user-name&gt;</span></code> par le <strong>nom d’utilisateur</strong> que vous avez défini dans le partie <strong>“paramètres généraux”</strong> :</p>
+<p>Dans la partie <strong>“Données personnalisées”</strong>, vous devez ajouter le <strong>script de démarrage</strong> qui permet l’<strong>installation de TLJH</strong> sur la machine virtuelle. Vous pouvez <strong>copier/coller</strong> le code suivant en remplaçant <code class="docutils literal notranslate"><span class="pre">&lt;admin-user-name&gt;</span></code> par le <strong>nom d’utilisateur</strong> que vous avez défini dans la partie <strong>“paramètres généraux”</strong> :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 curl<span class="w"> </span>-L<span class="w"> </span>https://tljh.jupyter.org/bootstrap.py<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>python3<span class="w"> </span>-<span class="w"> </span><span class="se">\</span>
@@ -527,7 +527,7 @@ curl<span class="w"> </span>-L<span class="w"> </span>https://tljh.jupyter.org/b
 </section>
 <section id="etape-7-verification-du-fonctionnement-du-jupyter-hub">
 <h2>Etape 7 : vérification du fonctionnement du Jupyter Hub<a class="headerlink" href="#etape-7-verification-du-fonctionnement-du-jupyter-hub" title="Permalink to this headline">#</a></h2>
-<p>Au bout de quelques minutes, vous devez voir apparaître l’écran suivant avec le message <strong>“Votre déploiement a été effectué”</strong>. Ceci vous indique que la machine virtuelle a été <strong>déployée</strong>. Par contre, il faut encore <strong>attendre quelques minutes</strong> pour le script d’installation du JupyterHub <strong>s’installe complétement</strong>.</p>
+<p>Au bout de quelques minutes, vous devez voir apparaître l’écran suivant avec le message <strong>“Votre déploiement a été effectué”</strong>. Ceci vous indique que la machine virtuelle a été <strong>déployée</strong>. Par contre, il faut encore <strong>attendre quelques minutes</strong> pour que le script d’installation du JupyterHub <strong>s’installe complétement</strong>.</p>
 <p><img alt="install_10" src="_images/install_10.png" /></p>
 <p>Vous pouvez cliquer sur le bouton <strong>“Accéder à la ressource”</strong> qui vous amène sur cette page :</p>
 <p><img alt="install_11" src="_images/install_11.png" /></p>
@@ -555,14 +555,14 @@ Si vous souhaitez accéder aux <strong>logs</strong> pour <strong>résoudre le p
 <p><img alt="install_17" src="_images/install_17.png" /></p>
 <p>Vous pouvez ensuite vous <strong>connecter à cette url</strong>, rentrer votre identifiant d’administrateur dans la fenêtre de login du JupyterHub et <strong>ouvrir un terminal</strong> de cette façon :</p>
 <p><img alt="install_18" src="_images/install_18.png" /></p>
-<p>Une fois le <strong>terminal</strong> ouvert, vous pouvez <strong>exécuter les commandes suivantes</strong> en remplassant  “<a class="reference external" href="mailto:you&#37;&#52;&#48;example&#46;com">you<span>&#64;</span>example<span>&#46;</span>com</a>” par votre <strong>adresse email</strong> et “<a class="reference external" href="http://yourhub.yourdomain.edu">yourhub.yourdomain.edu</a>” par le <strong>nom de domaine</strong> que vous venez de définir dans Azure :</p>
+<p>Une fois le <strong>terminal</strong> ouvert, vous pouvez <strong>exécuter les commandes suivantes</strong> en remplaçant  “<a class="reference external" href="mailto:you&#37;&#52;&#48;example&#46;com">you<span>&#64;</span>example<span>&#46;</span>com</a>” par votre <strong>adresse email</strong> et “<a class="reference external" href="http://yourhub.yourdomain.edu">yourhub.yourdomain.edu</a>” par le <strong>nom de domaine</strong> que vous venez de définir dans Azure :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>tljh-config<span class="w"> </span><span class="nb">set</span><span class="w"> </span>https.enabled<span class="w"> </span><span class="nb">true</span>
 sudo<span class="w"> </span>tljh-config<span class="w"> </span><span class="nb">set</span><span class="w"> </span>https.letsencrypt.email<span class="w"> </span>you@example.com
 sudo<span class="w"> </span>tljh-config<span class="w"> </span>add-item<span class="w"> </span>https.letsencrypt.domains<span class="w"> </span>yourhub.yourdomain.edu
 </pre></div>
 </div>
 <p><img alt="install_19" src="_images/install_19.png" /></p>
-<p>Si vous souhaitez <strong>vérifier</strong> que les commandes ont <strong>bien été enregistrées</strong>, vous pouvez éxécuter la commande suivante :</p>
+<p>Si vous souhaitez <strong>vérifier</strong> que les commandes ont <strong>bien été enregistrées</strong>, vous pouvez exécuter la commande suivante :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>tljh-config<span class="w"> </span>show
 </pre></div>
 </div>
@@ -616,7 +616,7 @@ sudo<span class="w"> </span>tljh-config<span class="w"> </span>add-item<span cla
     <a class='right-next' id="next-link" href="parametrages.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Comment paramètrer TLJH à votre usage ?</p>
+        <p class="prev-next-title">Comment paramétrer TLJH à votre usage ?</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

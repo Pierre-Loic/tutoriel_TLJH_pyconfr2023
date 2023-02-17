@@ -1,6 +1,6 @@
 # Où et comment installer TLJH ?
 
-L'installation de TLJH peut s'effectuer sur toute machine virtuelle avec système d'exploitation **Ubuntu Server 18.04 ou plus récent**. Je vous présente ici l'installation sur **Azure** mais cette installation est aussi possible sur les **autres fournisseurs de cloud** (AWS, GCP, OVHCloud, Scaleway...).
+L'installation de TLJH peut s'effectuer sur toute machine virtuelle avec un système d'exploitation **Ubuntu Server 18.04 ou plus récent**. Je vous présente ici l'installation sur **Azure** mais cette installation est aussi possible sur les **autres fournisseurs de cloud** (AWS, GCP, OVHCloud, Scaleway...).
 
 ```{warning}
 Avec l'utilisation du cloud, on peut vite avoir des **surprises sur la facturation**. Je vous conseille donc de bien vérifier que l'**arrêt automatique** est activé. Normalement, il est mis en place par défaut à 19h.
@@ -38,23 +38,23 @@ La **version** d'Ubuntu serveur doit être **ultérieure à 18.04**. Vous pouvez
 
 ![install_4](install_4.png)
 
-Pour accéder au paramètrage de la machine virtuelle, cliquez sur **"Créer"** :
+Pour accéder au paramétrage de la machine virtuelle, cliquez sur **"Créer"** :
 
 ![install_5](install_5.png)
 
 ## Etape 3 : paramètres généraux
 
-Après avoir cliqué sur "Créer", vous arrivez sur cet **écran de paramètrage** de la machine virtuelle **Ubuntu Server 22.04 LTS** :
+Après avoir cliqué sur "Créer", vous arrivez sur cet **écran de paramétrage** de la machine virtuelle **Ubuntu Server 22.04 LTS** :
 
 ![install_6](install_6.png)
 
-Dans l'onglet des **paramètres de base**, vous devez remplir les élèments suivants :
+Dans l'onglet des **paramètres de base**, vous devez remplir les éléments suivants :
 
 ```{admonition} Information
 Les **paramètres non listés** doivent être laissés à leur **valeur par défaut**. Pour plus de détails, vous pouvez regarder cette **vidéo** : [![The Littlest JupyterHub - Partie 1 - Installation sur Azure](http://img.youtube.com/vi/x-MJwweK0Mw/0.jpg)](https://www.youtube.com/watch?v=x-MJwweK0Mw "The Littlest JupyterHub - Partie 1 - Installation sur Azure")
 ```
 
-- *Abonnement* : selectionnez le compte qui sera **facturé** pour cette machine virtuelle
+- *Abonnement* : sélectionnez le compte qui sera **facturé** pour cette machine virtuelle
 
 - *Groupe de ressources* : choisissez un nom qui vous permet de retrouver facilement l'**ensemble des ressources** liées au JupyterHub. Par exemple, `rg-TLJH`
 
@@ -92,7 +92,7 @@ Après avoir défini les paramètres du stockage, on peut passer aux **paramètr
 
 ![install_8](install_8.png)
 
-Dans la partie **"Données personnalisées"**, vous devez ajouter le **script de démarrage** qui permet l'**installation de TLJH** sur la machine virtuelle. Vous pouvez **copier/coller** le code suivant en remplaçant `<admin-user-name>` par le **nom d'utilisateur** que vous avez défini dans le partie **"paramètres généraux"** :
+Dans la partie **"Données personnalisées"**, vous devez ajouter le **script de démarrage** qui permet l'**installation de TLJH** sur la machine virtuelle. Vous pouvez **copier/coller** le code suivant en remplaçant `<admin-user-name>` par le **nom d'utilisateur** que vous avez défini dans la partie **"paramètres généraux"** :
 
 ```bash
 #!/bin/bash
@@ -111,7 +111,7 @@ Si tout a été **rempli correctement**, vous devez voir apparaître un **bandea
 
 ## Etape 7 : vérification du fonctionnement du Jupyter Hub
 
-Au bout de quelques minutes, vous devez voir apparaître l'écran suivant avec le message **"Votre déploiement a été effectué"**. Ceci vous indique que la machine virtuelle a été **déployée**. Par contre, il faut encore **attendre quelques minutes** pour le script d'installation du JupyterHub **s'installe complétement**.
+Au bout de quelques minutes, vous devez voir apparaître l'écran suivant avec le message **"Votre déploiement a été effectué"**. Ceci vous indique que la machine virtuelle a été **déployée**. Par contre, il faut encore **attendre quelques minutes** pour que le script d'installation du JupyterHub **s'installe complétement**.
 
 ![install_10](install_10.png)
 
@@ -157,7 +157,7 @@ Vous pouvez ensuite vous **connecter à cette url**, rentrer votre identifiant d
 
 ![install_18](install_18.png)
 
-Une fois le **terminal** ouvert, vous pouvez **exécuter les commandes suivantes** en remplassant  "you@example.com" par votre **adresse email** et "yourhub.yourdomain.edu" par le **nom de domaine** que vous venez de définir dans Azure :
+Une fois le **terminal** ouvert, vous pouvez **exécuter les commandes suivantes** en remplaçant  "you@example.com" par votre **adresse email** et "yourhub.yourdomain.edu" par le **nom de domaine** que vous venez de définir dans Azure :
 ```bash
 sudo tljh-config set https.enabled true
 sudo tljh-config set https.letsencrypt.email you@example.com
@@ -166,7 +166,7 @@ sudo tljh-config add-item https.letsencrypt.domains yourhub.yourdomain.edu
 
 ![install_19](install_19.png)
 
-Si vous souhaitez **vérifier** que les commandes ont **bien été enregistrées**, vous pouvez éxécuter la commande suivante :
+Si vous souhaitez **vérifier** que les commandes ont **bien été enregistrées**, vous pouvez exécuter la commande suivante :
 ```bash
 sudo tljh-config show
 ```
